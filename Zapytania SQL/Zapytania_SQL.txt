@@ -1,0 +1,11 @@
+Wyświetl czytleników których imie zaczyna się od "P"
+SELECT * FROM czytelnicy WHERE imie LIKE 'P%';
+
+Wyświetl tytuły książek od najdłuższego do najkrótszego
+SELECT * FROM ksiazka ORDER BY LENGTH(tytul) DESC;
+
+Wyswietl książke która ma najdłuższy tytuł
+SELECT * FROM ksiazka ORDER BY LENGTH(tytul) DESC LIMIT 1;
+
+Wyświetl użytkowników zarejestrowanych w tym miesiącu
+SELECT * FROM czytelnicy WHERE MONTH(data_rej) = MONTH(CURRENT_DATE) AND YEAR(data_rej) = YEAR(CURRENT_DATE);
