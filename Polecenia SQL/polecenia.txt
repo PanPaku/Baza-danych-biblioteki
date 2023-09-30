@@ -6,7 +6,8 @@ INSERT INTO autor (autor_ID, imie, nazwisko) VALUES (1, 'Zygmunt' , 'Miłoszewsk
 Czytelnicy:
 
 ALTER TABLE czytelnicy ADD COLUMN czytelnik_ID BIGINT(20) UNSIGNED NOT NULL;
-INSERT INTO czytelnicy (czytelnik_ID, imie, nazwisko, adres, miasto, kod_pocztowy, aktywny_uzy, status_aktyw, data_rej) VALUES (1, 'Paweł' , 'Dudziak', 'Leszno 120', 'Przemyśl', '37-700', 'Tak', 'aktywny', '2022-03-25 21:14:46');
+INSERT INTO czytelnicy (czytelnik_ID, imie, nazwisko, adres, miasto, kod_pocztowy, status_aktyw, email, data_rej) VALUES (1, 'Paweł' , 'Dudziak', 'Leszno 120', 'Przemyśl', '37-700', 'aktywny', 'paweldudziak@spoko.pl',  '2022-03-25 21:14:46');
+
 
 Egzemplarz:
 
